@@ -3,7 +3,8 @@ import json
 import requests
 from bs4 import BeautifulSoup
 from openai import OpenAI
-
+from metrics import init_metrics, JOBS_PROCESSED
+init_metrics(8000)
 # 1. 读取中转站配置并初始化客户端
 api_key = os.getenv("OPENAI_API_KEY")
 base_url = os.getenv("OPENAI_BASE_URL")
