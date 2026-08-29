@@ -1,0 +1,34 @@
+b8ce7d1 aider: Added initial frontend setup with welcome page and basic styling
+9f2bfc6 aider: Added core file structure for women's travel website project
+total 132
+drwxr-xr-x  5 melody melody 4096 Aug 29 16:20 .
+drwxr-x--- 16 melody melody 4096 Aug 28 13:34 ..
+-rw-r--r--  1 melody melody  113 Aug 25 09:23 .env
+-rw-r--r--  1 melody melody  193 Aug 25 09:15 Dockerfile
+drwxr-xr-x  2 melody melody 4096 Aug 13 20:23 __pycache__
+-rw-r--r--  1 melody melody 1362 Aug 13 17:18 analyzer.py
+-rw-r--r--  1 melody melody 1269 Aug 28 19:54 auto_runner.py
+-rw-r--r--  1 melody melody  700 Aug 13 17:15 check_and_fix.py
+-rw-rw-r--  1 melody melody 4079 Aug 29 09:23 cron.log
+-rw-r--r--  1 melody melody 2354 Aug 12 19:07 daily_digest.py
+-rw-r--r--  1 melody melody 3790 Aug 12 21:44 daily_push.py
+-rw-r--r--  1 melody melody 3779 Aug 12 19:08 daily_report.txt
+-rw-r--r--  1 melody melody  252 Aug 24 10:03 docker-compose.yml
+-rw-r--r--  1 melody melody 3271 Aug 13 20:08 fetcher.py
+-rw-r--r--  1 melody melody 2315 Aug 13 16:57 fix_all.py
+-rw-r--r--  1 melody melody 1347 Aug 13 16:56 fix_json_error.py
+-rw-r--r--  1 melody melody  643 Aug 13 16:58 fix_json_extra_data.py
+-rw-r--r--  1 melody melody 1273 Aug 13 15:21 formatter.py
+-rw-r--r--  1 melody melody 5909 Aug 29 15:41 job_agent.py
+-rw-r--r--  1 melody melody 4489 Aug 25 09:12 main.py
+drwxr-xr-x  2 melody melody 4096 Aug 28 18:49 models
+-rw-r--r--  1 melody melody 1551 Aug 12 21:17 push_telegram.py
+-rw-r--r--  1 melody melody 3570 Aug 13 20:23 pusher.py
+-rw-r--r--  1 melody melody  156 Aug 29 16:20 repo_summary.txt
+-rw-r--r--  1 melody melody  110 Aug 11 14:41 report.csv
+-rw-r--r--  1 melody melody   31 Aug 25 09:15 requirements.txt
+-rw-r--r--  1 melody melody  351 Aug 11 14:41 sandbox_temp.py
+-rw-r--r--  1 melody melody 2121 Aug 12 21:48 seen_items.json
+-rw-r--r--  1 melody melody  303 Aug 13 15:53 temp_config.py
+-rw-r--r--  1 melody melody 3744 Aug 13 15:10 tools.py
+drwxr-xr-x  5 melody melody 4096 Aug 10 17:58 venv

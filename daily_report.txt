@@ -1,0 +1,68 @@
+🤖 **【AI 前沿每日情报精报 - 2026年08月12日】**
+
+==================================================
+
+🔥 **一、 每日必读 · 全球 AI 焦点 (Top 10)**
+
+1. **[TLDR AI]** Muse Glimmer ✨, OpenAI Cyber 🛡️, Claude vs Riemann Hypothesis 🧠
+   💡 *🌐 行业焦点* | 摘要: ...
+   🔗 https://tldr.tech/ai/2026-08-11
+
+2. **[TLDR AI]** OpenAI Astra pause 🚨, Claude Code cross-session 🤖, how Cursor Router works 🔀
+   💡 *🌐 行业焦点* | 摘要: ...
+   🔗 https://tldr.tech/ai/2026-08-10
+
+3. **[TLDR AI]** GPT-5.6 Luna default 🌙, Agent Plugins 🔌, AMD Taalas acquisition 🧩
+   💡 *🌐 行业焦点* | 摘要: ...
+   🔗 https://tldr.tech/ai/2026-08-07
+
+4. **[TLDR AI]** Google DeepMind reshuffle 🧠, Meta Muse Code 💻, Anthropic chip team 🧩
+   💡 *🌐 行业焦点* | 摘要: ...
+   🔗 https://tldr.tech/ai/2026-08-06
+
+5. **[TLDR AI]** Google LLM router ➡️, Cloudflare Wallets 💳, Anthropic and Volta 🤝
+   💡 *🌐 行业焦点* | 摘要: ...
+   🔗 https://tldr.tech/ai/2026-08-05
+
+6. **[TLDR AI]** ChronicleBio 🧬, Mind Lab continual learning 📈, GPT-Live architecture 🎙️
+   💡 *🌐 行业焦点* | 摘要: ...
+   🔗 https://tldr.tech/ai/2026-08-04
+
+7. **[TLDR AI]** DeepSeek V4 Flash ⚡, OpenAI’s math breakthrough 🔢, Qwen 3.8-Max 🤖
+   💡 *🌐 行业焦点* | 摘要: ...
+   🔗 https://tldr.tech/ai/2026-08-03
+
+8. **[TLDR AI]** Inkling-Small 🧠, GPT-5.6 price cuts 💸, Gemini Robotics 2 🤖
+   💡 *🌐 行业焦点* | 摘要: ...
+   🔗 https://tldr.tech/ai/2026-07-31
+
+9. **[Hacker News]** Tim Gowers: What sort of maths are LLMs good at?
+   💡 *💬 54 Points* | 摘要: 由 ColinWright 发布，共 6 条讨论...
+   🔗 https://gowers.wordpress.com/2026/08/12/what-sort-of-maths-are-llms-good-at/
+
+10. **[Hacker News]** Show HN: Woxi - Open-source Mathematica / Wolfram Language reimplementation
+   💡 *💬 46 Points* | 摘要: 由 adius 发布，共 1 条讨论...
+   🔗 https://woxi.ad-si.com
+
+🛠️ **二、 趋势工具与热门项目 (Top 6)**
+
+📄 **三、 前沿学术与论文速递 (Top 4)**
+
+1. **[Hugging Face Daily]** InSight-doc: Agentic Visual Perception for Long-Document Understanding
+   🔬 *🔥 3 Upvotes* | 突破点: Long-document understanding often requires reasoning over many visually rich pages, making inference costly and prone to context rot. In this work, we propose InSight-doc, an agent...
+   🔗 https://huggingface.co/papers/2608.10628
+
+2. **[Hugging Face Daily]** Power law graph attention: exact generalization of scaled dot-product attention, empirical collapse at inference
+   🔬 *🔥 0 Upvotes* | 突破点: The Large Language Model from Power Law Decoder Representations (PLDR-LLM) and its attention, Power Law Graph Attention (PLGA), replace the fixed bilinear form of scaled dot-produc...
+   🔗 https://huggingface.co/papers/2608.10288
+
+3. **[Hugging Face Daily]** 360CityArena: A Realistic Virtual Urban Navigation Benchmark for Embodied Agents
+   🔬 *🔥 2 Upvotes* | 突破点: We present 360CityArena, a benchmark for evaluating the urban exploration capabilities of embodied agents within a photorealistic environment constructed from 360-degree videos. Ex...
+   🔗 https://huggingface.co/papers/2608.08814
+
+4. **[Hugging Face Daily]** Decoding-Level Taboo: A Diagnostic Stress Test for LLM Robustness
+   🔬 *🔥 7 Upvotes* | 突破点: Large language model evaluations typically focus on performance under nominal conditions, creating an illusion of capability where models comfortably walk a narrow, highly optimize...
+   🔗 https://huggingface.co/papers/2608.09900
+
+==================================================
+✨ *由 AI Intelligence Agent 自动过滤与渲染生成*

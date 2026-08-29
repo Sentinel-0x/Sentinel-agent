@@ -1,0 +1,4 @@
+.envvenv/
+venv/
+.env
+models/

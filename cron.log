@@ -1,0 +1,73 @@
+[Agent Workflow] 启动 Twitter 实时推文筛选 Pipeline...
+
+[Fetcher] 尝试从 RSS 节点抓取 @karpathy: https://rsshub.app/twitter/user/karpathy
+[Fetcher] 尝试从 RSS 节点抓取 @karpathy: https://nitter.net/karpathy/rss
+[Fetcher] 尝试从 RSS 节点抓取 @karpathy: https://nitter.privacydev.net/karpathy/rss
+❌ [Fetcher] 警告: @karpathy 的公共 RSS 节点不可用
+[Fetcher] 尝试从 RSS 节点抓取 @sama: https://rsshub.app/twitter/user/sama
+[Fetcher] 尝试从 RSS 节点抓取 @sama: https://nitter.net/sama/rss
+  └─ 成功抓取到 2 条推文！
+
+[Analyzer] 收到真实推文: /ultrafast...
+  └─ [SiliconFlow Pipeline] 正在分析...
+```json
+{
+  "is_valuable": false,
+  "category": "Unclassified",
+  "summary_zh": "内容仅为单字词，无法提取有效信息",
+  "reasoning": "推文仅包含'/ultrafast'一个单词，无实质内容或行业洞见，不符合高价值判定标准"
+}
+```
+
+❌ [Analyzer] 已过滤闲聊推文: @sama
+
+
+[Analyzer] 收到真实推文: RT by @sama: The OpenAI Foundation is launching AI for Civil Society and Philant...
+  └─ [SiliconFlow Pipeline] 正在分析...
+```json
+{
+  "is_valuable": true,
+  "category": "AI Application",
+  "summary_zh": "OpenAI基金会启动AI for Civil Society and Philanthropy项目，旨在帮助非营利组织和社区组织利用先进AI解决紧迫问题。首个项目是与Common Health Coalition合作的1亿美元承诺，目标是利用AI提高阿拉巴马等四州的丙型肝炎治愈率。",
+  "reasoning": "该推文宣布了OpenAI基金会的重要AI应用项目，涉及实际社会问题的解决方案和资金投入，具有明确的公益目标和实施计划，属于高价值信息。"
+}
+```
+
+✅ [高价值推文] 分类: AI Application
+💡 总结: OpenAI基金会启动AI for Civil Society and Philanthropy项目，旨在帮助非营利组织和社区组织利用先进AI解决紧迫问题。首个项目是与Common Health Coalition合作的1亿美元承诺，目标是利用AI提高阿拉巴马等四州的丙型肝炎治愈率。
+🎯 依据: 该推文宣布了OpenAI基金会的重要AI应用项目，涉及实际社会问题的解决方案和资金投入，具有明确的公益目标和实施计划，属于高价值信息。
+🔗 链接: https://nitter.net/FoundationOAI/status/2087911509997531178#m
+
+[Agent Workflow] 启动 AI 开源项目实时情报监控流程...
+
+[Fetcher] 正在抓取 GitHub 今日热门 AI/Python 开源项目...
+  └─ 成功获取到 5 个热门开源项目！
+
+[Analyzer] 分析项目: 项目名: Alishahryar1/free-claude-code
+项目简介: Use Claude Code, Codex, Pi, and OpenCod...
+
+[Analyzer] 分析项目: 项目名: MadsLorentzen/ai-job-search
+项目简介: The job search that runs on your machine....
+
+[Analyzer] 分析项目: 项目名: NousResearch/hermes-agent
+项目简介: The agent that grows with you...
+
+[Analyzer] 分析项目: 项目名: anthropics/claude-plugins-community
+项目简介: Community plugin marketplace for ...
+
+[Analyzer] 分析项目: 项目名: PostHog/posthog
+项目简介: 🦔 PostHog is the leading platform for building self-d...
+Traceback (most recent call last):
+  File "/home/melody/ai-intelligence-agent/main.py", line 11, in <module>
+    client = OpenAI(
+             ^^^^^^^
+  File "/home/melody/ai-intelligence-agent/venv/lib/python3.12/site-packages/openai/_client.py", line 231, in __init__
+    raise OpenAIError(
+openai.OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.
+Traceback (most recent call last):
+  File "/home/melody/ai-intelligence-agent/main.py", line 11, in <module>
+    client = OpenAI(
+             ^^^^^^^
+  File "/home/melody/ai-intelligence-agent/venv/lib/python3.12/site-packages/openai/_client.py", line 231, in __init__
+    raise OpenAIError(
+openai.OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.

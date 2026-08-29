@@ -1,0 +1,59 @@
+2026-08-29 16:33:59,698 [WARNING] python-dotenv could not parse statement starting at line 1
+2026-08-29 16:33:59,699 [CRITICAL] ❌ 未检测到 Telegram 凭证！请在 .env 文件中配置 TELEGRAM_BOT_TOKEN 与 TELEGRAM_CHAT_ID
+2026-08-29 16:42:08,307 [INFO] 🤖 正在初始化本地 AI 模型...
+2026-08-29 16:42:10,235 [INFO] 📡 正在抓取 [Jobicy] 远程 API...
+2026-08-29 16:42:11,487 [INFO] 📡 正在抓取 [Remotive] 远程 API...
+2026-08-29 16:42:11,834 [INFO] ✅ 聚合完成！共获取到 29 个原始岗位，开始本地 AI 精细化严审...
+2026-08-29 16:42:11,834 [INFO] [1/29] 正在评估 [Jobicy]: Director I, Data Science, Enterprise Data & Data Science @ Liberty Mutual
+2026-08-29 16:42:54,465 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 16:42:54,465 [INFO] [2/29] 正在评估 [Jobicy]: Senior Product Designer - Benefits Servicing @ Humana
+2026-08-29 16:43:11,967 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 16:43:11,967 [INFO] [3/29] 正在评估 [Jobicy]: Director, Product Design @ Samsara
+2026-08-29 16:43:33,058 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 16:43:33,058 [INFO] [4/29] 正在评估 [Jobicy]: Solidity Compiler Frontend Engineer @ CertiK
+2026-08-29 16:43:55,028 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 16:43:55,029 [INFO] [5/29] 正在评估 [Jobicy]: Software Engineer, AI Agent Platform @ QAD, Inc.
+2026-08-29 16:44:18,194 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 16:44:18,194 [INFO] [6/29] 正在评估 [Jobicy]: Home- Soft Sourcing Managers, Soft Home (EUR) @ Quince
+2026-08-29 16:44:40,472 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 16:44:40,473 [INFO] [7/29] 正在评估 [Jobicy]: Senior Consulting Engineer - Singapore @ Clickhouse
+2026-08-29 16:45:05,888 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 16:45:05,888 [INFO] [8/29] 正在评估 [Jobicy]: Junior SAP Integration Developer @ ManTech
+2026-08-29 16:45:24,858 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 16:45:24,859 [INFO] [9/29] 正在评估 [Jobicy]: Data Scientist, Analytics (Technical Leadership) @ Meta
+2026-08-29 16:45:46,514 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 16:45:46,515 [INFO] [10/29] 正在评估 [Jobicy]: Transcription / Subtitling Specialist (Freelance) @ Elevenlabs
+2026-08-29 16:46:04,957 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 16:46:04,957 [INFO] [11/29] 正在评估 [Remotive]: Senior QA Engineer @ Lemon.io
+2026-08-29 16:46:27,493 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 16:46:27,494 [INFO] [12/29] 正在评估 [Remotive]: Senior DevOps Engineer @ Lemon.io
+2026-08-29 16:46:51,704 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 16:46:51,705 [INFO] [13/29] 正在评估 [Remotive]: Content Reviewer - English US @ TELUS Digital
+2026-08-29 16:47:15,720 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 16:47:15,720 [INFO] [14/29] 正在评估 [Remotive]: Senior Golang Developer @ Lemon.io
+2026-08-29 16:47:35,374 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 16:47:35,375 [INFO] [15/29] 正在评估 [Remotive]: Vice President, Technology & Digital Strategy @ Shatterproof
+2026-08-29 16:47:54,540 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 16:47:54,541 [INFO] [16/29] 正在评估 [Remotive]: Senior Data Engineer @ Lemon.io
+2026-08-29 18:51:13,507 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 18:51:13,538 [INFO] [17/29] 正在评估 [Remotive]: Senior Independent AI Engineer / Architect @ A.Team
+2026-08-29 18:51:57,710 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 18:51:57,711 [INFO] [18/29] 正在评估 [Remotive]: Senior Independent Software Developer @ A.Team
+2026-08-29 18:52:26,308 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 18:52:26,308 [INFO] [19/29] 正在评估 [Remotive]: Head of Marketing & Communications @ garden3d
+2026-08-29 18:54:20,592 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 18:54:20,631 [INFO] [20/29] 正在评估 [Remotive]: Tech Lead Full-Stack Rails Engineer @ Mitre Media
+2026-08-29 18:56:28,633 [INFO] 🚫 判定为不推荐，已通过门控拦截（未触发网络推送）。
+2026-08-29 18:56:28,640 [INFO] [21/29] 正在评估 [Remotive]: Face Deduplication Collection @ TELUS Digital
+2026-08-29 19:03:28,877 [INFO] 🤖 正在初始化本地 AI 模型...
+2026-08-29 19:03:31,323 [INFO] 📡 正在抓取 [Jobicy] 远程 API...
+2026-08-29 19:03:35,346 [ERROR] ⚠️ Jobicy 渠道抓取失败: RetryError[<Future at 0x7836fa3f6db0 state=finished raised ConnectionError>]
+2026-08-29 19:03:35,346 [INFO] 📡 正在抓取 [Remotive] 远程 API...
+2026-08-29 19:03:39,355 [ERROR] ⚠️ Remotive 渠道抓取失败: RetryError[<Future at 0x7836fa3f5280 state=finished raised ConnectionError>]
+2026-08-29 19:03:39,356 [INFO] ✅ 聚合完成！共获取到 0 个原始岗位，开始本地 AI 精细化严审...
+2026-08-29 19:05:05,474 [INFO] 🤖 正在初始化本地 AI 模型...
+2026-08-29 19:05:06,483 [INFO] 📡 正在抓取 [Jobicy] 远程 API...
+2026-08-29 19:05:41,655 [ERROR] ⚠️ Jobicy 渠道抓取失败: RetryError[<Future at 0x79f5cd7eba40 state=finished raised ConnectionError>]
+2026-08-29 19:05:41,656 [INFO] 📡 正在抓取 [Remotive] 远程 API...
+2026-08-29 19:06:15,705 [ERROR] ⚠️ Remotive 渠道抓取失败: RetryError[<Future at 0x79f5cd7ead50 state=finished raised ConnectionError>]
+2026-08-29 19:06:15,706 [INFO] ✅ 聚合完成！共获取到 0 个原始岗位，开始本地 AI 精细化严审...
