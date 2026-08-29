@@ -1,0 +1,20 @@
+[Unit]
+Description=AI Intelligence Agent Daemon Service
+After=network.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=melody
+WorkingDirectory=/home/melody/ai-intelligence-agent
+ExecStart=/home/melody/ai-intelligence-agent/venv/bin/python main.py
+
+# 异常崩溃与意外退出时自动重启（延迟 5 秒）
+Restart=always
+RestartSec=5
+
+# 运行环境变量配置
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
