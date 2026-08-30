@@ -1,4 +1,31 @@
-.envvenv/
-venv/
+# --- 核心安全禁区 ---
+# 绝对不能上传的 API Keys 和环境变量
 .env
+
+# --- Python 工程化 ---
+# 虚拟环境（通常很大，且包含特定机器配置）
+venv/
+# Python 编译缓存
+__pycache__/
+# pytest 缓存
+.pytest_cache/
+
+# --- Agent 运行时数据 ---
+# 本地 SQLite 数据库（包含历史对话轨迹）
+agent_state.db
+# 运行时产生的日志文件
+*.log
+
+# --- 临时测试文件 ---
+# Agent 自主生成的临时 Python 脚本
+bug_demo.py
+agent_demo.py
+test_*.py
+
+# --- IDE 配置 ---
+.vscode/
+.idea/
+
+# --- 其他 ---
+# 大型二进制模型文件（如果有的话）
 models/
