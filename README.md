@@ -2,8 +2,7 @@
 
 # 🛡️ Sandboxed & Self-Healing ReAct Runtime Engine
 
-**面向企业级生产环境的轻量级智能体运行时**  
-*兼顾绝对安全隔离、自主错误自愈与长程状态持久化*
+**A Lightweight Agent Runtime Engine for Enterprise Production** *Absolute Security Isolation, Autonomous Self-Healing & Long-term State Persistence*
 
 ---
 
@@ -16,8 +15,6 @@
 
 ---
 
-## 🎬 核心运行演示 (Live Execution Demo)
+## 🎬 Live Execution Demo
 
-> **"不再是脆弱的聊天玩具，而是具备真实工程闭环能力的自动化引擎。"**
-
-*(此处后续可放一张终端运行报错、自愈、成功的 GIF 动图，例如：)*
+> **"Moving beyond fragile chat toys into a robust, closed-loop automation engine for production environments."**
