@@ -1,81 +1,51 @@
 import sqlite3
-import json
+import time
 import os
-from datetime import datetime
 
-class AgentMemoryStore:
-    def __init__(self, db_path: str = "agent_state.db"):
+class AgentMemory:
+    def __init__(self, db_path="agent_state.db"):
         self.db_path = db_path
         self._init_db()
 
+    def _get_connection(self):
+        conn = sqlite3.connect(self.db_path, timeout=10.0)
+        conn.execute("PRAGMA journal_mode=WAL;")
+        conn.execute("PRAGMA synchronous=NORMAL;")
+        return conn
+
     def _init_db(self):
-        """初始化轻量级 SQLite 状态存储表"""
-        conn = sqlite3.connect(self.db_path)
-        cursor = conn.cursor()
-        cursor.execute("""
-            CREATE TABLE IF NOT EXISTS agent_tasks (
-                task_id TEXT PRIMARY KEY,
-                goal TEXT,
-                status TEXT,
-                trajectory TEXT,
-                final_answer TEXT,
-                created_at TEXT
-            )
-        """)
-        conn.commit()
-        conn.close()
+        with self._get_connection() as conn:
+            conn.execute('''
+                CREATE TABLE IF NOT EXISTS memory_traces (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    step INTEGER,
+                    state_data TEXT,
+                    timestamp REAL
+                )
+            ''')
+            conn.commit()
 
-    def save_task_state(self, task_id: str, goal: str, status: str, messages: list, final_answer: str = ""):
-        """持久化保存当前任务的执行状态与对话历史轨迹"""
-        conn = sqlite3.connect(self.db_path)
-        cursor = conn.cursor()
-        
-        # 将复杂的消息对象序列化为 JSON 字符串存储
-        serialized_messages = []
-        for msg in messages:
-            # 处理 OpenAI 消息对象的兼容转换
-            if hasattr(msg, "role"):
-                msg_dict = {"role": msg.role, "content": msg.content}
-                if hasattr(msg, "tool_calls") and msg.tool_calls:
-                    msg_dict["tool_calls"] = [
-                        {
-                            "id": tc.id,
-                            "type": tc.type,
-                            "function": {
-                                "name": tc.function.name,
-                                "arguments": tc.function.arguments
-                            }
-                        } for tc in msg.tool_calls
-                    ]
-                serialized_messages.append(msg_dict)
-            elif isinstance(msg, dict):
-                serialized_messages.append(msg)
+    def save_trace(self, step: int, state_data: str, max_retries=5):
+        delay = 0.05
+        for attempt in range(max_retries):
+            try:
+                with self._get_connection() as conn:
+                    conn.execute(
+                        "INSERT INTO memory_traces (step, state_data, timestamp) VALUES (?, ?, ?)",
+                        (step, state_data, time.time())
+                    )
+                    conn.commit()
+                return True
+            except sqlite3.OperationalError as e:
+                if "database is locked" in str(e) and attempt < max_retries - 1:
+                    time.sleep(delay)
+                    delay *= 2
+                else:
+                    raise e
+        return False
 
-        trajectory_json = json.dumps(serialized_messages, ensure_ascii=False)
-        created_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-        cursor.execute("""
-            INSERT OR REPLACE INTO agent_tasks (task_id, goal, status, trajectory, final_answer, created_at)
-            VALUES (?, ?, ?, ?, ?, ?)
-        """, (task_id, goal, status, trajectory_json, final_answer, created_at))
-        
-        conn.commit()
-        conn.close()
-
-    def load_task_state(self, task_id: str) -> dict:
-        """根据任务 ID 读取历史记忆状态，用于断点恢复"""
-        conn = sqlite3.connect(self.db_path)
-        cursor = conn.cursor()
-        cursor.execute("SELECT task_id, goal, status, trajectory, final_answer FROM agent_tasks WHERE task_id = ?", (task_id,))
-        row = cursor.fetchone()
-        conn.close()
-
-        if row:
-            return {
-                "task_id": row[0],
-                "goal": row[1],
-                "status": row[2],
-                "trajectory": json.loads(row[3]),
-                "final_answer": row[4]
-            }
-        return None
+    def get_traces(self):
+        with self._get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("SELECT step, state_data, timestamp FROM memory_traces ORDER BY step ASC")
+            return cursor.fetchall()
